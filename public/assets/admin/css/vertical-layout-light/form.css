@@ -1,0 +1,239 @@
+
+.form_box1{
+    width:200%;
+    margin-bottom: 40px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .form_box1 .box_title1 {
+    padding: 0 15px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0;
+    border: 0;
+    color: var(--light-color);
+    background-color: #417C2C;
+    font-weight: 600;
+    font-size: 13px;
+}
+.container_box1 .box_desc1 {
+    border: 1px solid rgba(169,169,169,0.8);
+    margin: 0;
+    padding: 15px;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: var(--light-color);
+}
+.box_desc .row{
+    width: 100%;
+  }
+.report_table
+{
+	BORDER-COLLAPSE: collapse;
+	BORDER-COLOR: #111111;
+    FONT-SIZE: 9pt;
+    COLOR: black;
+    FONT-FAMILY: Arial,Tahoma,'Luxi Sans',Helvetica;
+}
+
+.report_td
+{
+	TEXT-ALIGN: left;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt;
+	FONT-FAMILY: Arial,Tahoma,'Luxi Sans',Helvetica;
+    COLOR: black;
+    BORDER: thin dashed;
+}	
+
+.report_td_amount
+{
+    TEXT-ALIGN: left;
+}	
+
+/* =================== Added new styles ========================= */
+/*	ADDED BY: Petronilo O. Montejo Jr.,  October 4, 2005
+	DESCRIPTION: 
+	These are the default style used in displaying reports
+*/
+/*  	STYLES
+
+	.col_hdr_nbl		 Header column No border bold 	left align
+	.col_hdr_bl		 Header column with border bold 	left align
+	.col_hdr_l		 Header column with border 	left align
+	.col_hdr_nl		 Header column No border 		left align
+	.col_hdr_lrl		 Header column left right border 	left align
+	.col_hdr_tbl		 Header column top bottom border left align
+	.col_hdr_bottoml	 Header column bottom border 	left align
+	.col_hdr_topl		 Header column top border 		left align
+	.col_hdr_rlbl		 Header column right left botom border left align
+
+
+*/
+/*===========================================================================================================================================*/
+/*	HEADER   =============================================================================================================================*/
+/*===========================================================================================================================================*/
+
+	/*=====================================*/
+	/*@@@@@Left Align Column Header		*/
+	/*=====================================*/
+	.col_hdr_nbl
+	{	FONT-WEIGHT: bold;FONT-SIZE: 8pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: left;		}
+	.col_hdr_bl
+	{	FONT-WEIGHT: bold;FONT-SIZE: 8pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: left;BORDER-TOP: thin solid; BORDER-BOTTOM: thin solid; BORDER-LEFT: thin solid; BORDER-RIGHT: thin solid    	}
+	.col_hdr_l
+	{	FONT-SIZE: 8pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;  TEXT-ALIGN: left;BORDER-TOP: thin solid; BORDER-BOTTOM: thin solid;BORDER-LEFT: thin solid; BORDER-RIGHT: thin solid    		}
+	.col_hdr_nl
+	{	FONT-SIZE: 8pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: left;	}
+	.col_hdr_lrl
+	{	FONT-SIZE: 8pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: left;BORDER-RIGHT: thin solid; BORDER-LEFT: thin solid	}
+	.col_hdr_tbl
+	{	FONT-SIZE: 8pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: left;BORDER-TOP: thin solid; BORDER-BOTTOM: thin solid	}
+	.col_hdr_bottoml
+	{	FONT-SIZE: 8pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: left;BORDER-BOTTOM: thin solid	}
+	.col_hdr_topl
+	{	FONT-SIZE: 8pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: left;BORDER-TOP: thin solid	}
+	.col_hdr_rlbl
+	{	FONT-SIZE: 8pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: left;BORDER-RIGHT: thin solid;BORDER-LEFT: thin solid; BORDER-BOTTOM: thin solid	}
+	
+
+	/*=====================================*/
+	/*@@@@@Center Align Column Header	*/
+	/*=====================================*/
+	.col_hdr_nbc
+	{	FONT-WEIGHT: bold;FONT-SIZE: 8pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: center;		}
+	.col_hdr_bc
+	{	FONT-WEIGHT: bold;FONT-SIZE: 8pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: center;BORDER-TOP: thin solid; BORDER-BOTTOM: thin solid; BORDER-LEFT: thin solid; BORDER-RIGHT: thin solid    	}
+	.col_hdr_c
+	{	FONT-SIZE: 8pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;  TEXT-ALIGN: center;BORDER-TOP: thin solid; BORDER-BOTTOM: thin solid;BORDER-LEFT: thin solid; BORDER-RIGHT: thin solid    		}
+	.col_hdr_nc
+	{	FONT-SIZE: 8pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: center;	}
+	.col_hdr_lrc
+	{	FONT-SIZE: 8pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: center;BORDER-RIGHT: thin solid; BORDER-LEFT: thin solid	}
+	.col_hdr_tbc
+	{	FONT-SIZE: 8pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: center;BORDER-TOP: thin solid; BORDER-BOTTOM: thin solid	}
+	.col_hdr_bottomc
+	{	FONT-SIZE: 8pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: center;BORDER-BOTTOM: thin solid	}
+	.col_hdr_topc
+	{	FONT-SIZE: 8pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: center;BORDER-TOP: thin solid	}
+	.col_hdr_rlbc
+	{	FONT-SIZE: 8pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: center;BORDER-RIGHT: thin solid;BORDER-LEFT: thin solid; BORDER-BOTTOM: thin solid	}
+
+	/*=====================================*/
+	/*@@@@@Right Align Column Header	*/
+	/*=====================================*/
+	.col_hdr_nbr
+	{	FONT-WEIGHT: bold;FONT-SIZE: 8pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: right;		}
+	.col_hdr_br
+	{	FONT-WEIGHT: bold;FONT-SIZE: 8pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: right;BORDER-TOP: thin solid; BORDER-BOTTOM: thin solid; BORDER-LEFT: thin solid; BORDER-RIGHT: thin solid    	}
+	.col_hdr_r
+	{	FONT-SIZE: 8pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;  TEXT-ALIGN: right;BORDER-TOP: thin solid; BORDER-BOTTOM: thin solid;BORDER-LEFT: thin solid; BORDER-RIGHT: thin solid    		}
+	.col_hdr_nr
+	{	FONT-SIZE: 8pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: right;	}
+	.col_hdr_lrr
+	{	FONT-SIZE: 8pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: right;BORDER-RIGHT: thin solid; BORDER-LEFT: thin solid	}
+	.col_hdr_tbr
+	{	FONT-SIZE: 8pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: right;BORDER-TOP: thin solid; BORDER-BOTTOM: thin solid	}
+	.col_hdr_bottomr
+	{	FONT-SIZE: 8pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: right;BORDER-BOTTOM: thin solid	}
+	.col_hdr_topr
+	{	FONT-SIZE: 8pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: right;BORDER-TOP: thin solid		}	
+	.col_hdr_rlbr
+	{	FONT-SIZE: 8pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: right;BORDER-RIGHT: thin solid;BORDER-LEFT: thin solid; BORDER-BOTTOM: thin solid	}
+
+
+/*===========================================================================================================================================*/
+/*	DETAILS   =============================================================================================================================*/
+/*===========================================================================================================================================*/
+	/*=====================================*/
+	/*@@@@@Left Align Column Details		*/
+	/*=====================================*/
+	.col_detl_nbl
+	{	FONT-WEIGHT: bold;FONT-SIZE: 7pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: left;		}
+	.col_detl_bl
+	{	FONT-WEIGHT: bold;FONT-SIZE: 7pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: left;BORDER-TOP: thin solid;BORDER-BOTTOM: thin solid; BORDER-RIGHT: thin solid; BORDER-LEFT: thin solid	}
+	.col_detl_l
+	{	FONT-SIZE: 7pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: left;BORDER-TOP: thin solid;BORDER-BOTTOM: thin solid; BORDER-RIGHT: thin solid; BORDER-LEFT: thin solid	}
+	.col_detl_nl
+	{	FONT-SIZE: 7pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: left;		}
+	.col_detl_lrl
+	{	FONT-SIZE: 7pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: left;BORDER-RIGHT: thin solid; BORDER-LEFT: thin solid	}
+	.col_detl_tbl
+	{	FONT-SIZE: 7pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: left;BORDER-TOP: thin solid; BORDER-BOTTOM: thin solid	}
+	.col_detl_bottoml
+	{	FONT-SIZE: 7pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: left;BORDER-BOTTOM: thin solid	}
+	.col_detl_topl
+	{	FONT-SIZE: 7pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: left;BORDER-TOP: thin solid	}
+	.col_detl_rlbl
+	{	FONT-SIZE: 7pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: left;BORDER-RIGHT: thin solid;BORDER-LEFT: thin solid; BORDER-BOTTOM: thin solid	}
+
+	/*=====================================*/
+	/*@@@@@Right Align Column Details			*/
+	/*=====================================*/
+	.col_detl_nbr
+	{	FONT-WEIGHT: bold;FONT-SIZE: 7pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: right;		}
+	.col_detl_br
+	{	FONT-WEIGHT: bold;FONT-SIZE: 7pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: right;BORDER-TOP: thin solid;BORDER-BOTTOM: thin solid; BORDER-RIGHT: thin solid; BORDER-LEFT: thin solid	}
+	.col_detl_r
+	{	FONT-SIZE: 7pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: right;BORDER-TOP: thin solid;BORDER-BOTTOM: thin solid; BORDER-RIGHT: thin solid; BORDER-LEFT: thin solid	}
+	.col_detl_nr
+	{	FONT-SIZE: 7pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: right;		}
+	.col_detl_lrr
+	{	FONT-SIZE: 7pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: right;BORDER-RIGHT: thin solid; BORDER-LEFT: thin solid	}
+	.col_detl_tbr
+	{	FONT-SIZE: 7pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: right;BORDER-TOP: thin solid; BORDER-BOTTOM: thin solid	}
+	.col_detl_bottomr
+	{	FONT-SIZE: 7pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: right;BORDER-BOTTOM: thin solid	}
+	.col_detl_topr
+	{	FONT-SIZE: 7pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: right;BORDER-TOP: thin solid	}
+	.col_detl_rlbr
+	{	FONT-SIZE: 7pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: right;BORDER-RIGHT: thin solid;BORDER-LEFT: thin solid; BORDER-BOTTOM: thin solid	}
+
+	/*=====================================*/
+	/*@@@@@Center Align Column Details		*/
+	/*=====================================*/
+	.col_detl_nbc
+	{	FONT-WEIGHT: bold;FONT-SIZE: 7pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: center;		}
+	.col_detl_bc
+	{	FONT-WEIGHT: bold;FONT-SIZE: 7pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: center;BORDER-TOP: thin solid;BORDER-BOTTOM: thin solid; BORDER-LEFT: thin solid; BORDER-RIGHT: thin solid	}
+	.col_detl_c
+	{	FONT-SIZE: 7pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: center;BORDER-TOP: thin solid;BORDER-BOTTOM: thin solid; BORDER-LEFT: thin solid; BORDER-RIGHT: thin solid	}
+	.col_detl_nc
+	{	FONT-SIZE: 7pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: center;		}
+	.col_detl_lrc
+	{	FONT-SIZE: 7pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: center;BORDER-RIGHT: thin solid; BORDER-LEFT: thin solid	}
+	.col_detl_tbc
+	{	FONT-SIZE: 7pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: center;BORDER-TOP: thin solid; BORDER-BOTTOM: thin solid	}
+	.col_detl_bottomc
+	{	FONT-SIZE: 7pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: center;BORDER-BOTTOM: thin solid	}
+	.col_detl_topc
+	{	FONT-SIZE: 7pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: center;BORDER-TOP: thin solid	}
+	.col_detl_rlbc
+	{	FONT-SIZE: 7pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: center;BORDER-RIGHT: thin solid;BORDER-LEFT: thin solid; BORDER-BOTTOM: thin solid	}
+
+	/*=====================================*/
+	/*@@@@@Thick Bottom Column Details		*/
+	/*=====================================*/
+	.col_detl_tl
+	{	FONT-SIZE: 7pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: left;BORDER-TOP: thin solid;BORDER-BOTTOM: thick solid;BORDER-LEFT: thin solid;BORDER-RIGHT: thin solid	}
+	.col_detl_tc
+	{	FONT-SIZE: 7pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: center;BORDER-TOP: thin solid;BORDER-BOTTOM: thick solid;BORDER-LEFT: thin solid;BORDER-RIGHT: thin solid	}
+	.col_detl_tr
+	{	FONT-SIZE: 7pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: right;BORDER-TOP: thin solid;BORDER-BOTTOM: thick solid;BORDER-LEFT: thin solid;BORDER-RIGHT: thin solid	}	
+
+	/*=====================================*/
+	/*@@@@@Thick Bold Bottom Column Header			*/
+	/*=====================================*/
+	.col_hdr_thbl
+	{	FONT-WEIGHT: bold;FONT-SIZE: 8pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: left;BORDER-TOP: thin solid;BORDER-BOTTOM: thick solid;BORDER-LEFT: thin solid;BORDER-RIGHT: thin solid	}
+	.col_hdr_thbc
+	{	FONT-WEIGHT: bold;FONT-SIZE: 8pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: center;BORDER-TOP: thin solid;BORDER-BOTTOM: thick solid;BORDER-LEFT: thin solid;BORDER-RIGHT: thin solid	}
+	.col_hdr_thbr
+	{	FONT-WEIGHT: bold;FONT-SIZE: 8pt;COLOR: black;FONT-FAMILY: Arial;FONT-STYLE: normal;TEXT-ALIGN: right;BORDER-TOP: thin solid;BORDER-BOTTOM: thick solid;BORDER-LEFT: thin solid;BORDER-RIGHT: thin solid	}	
+	
+	
+/* =================== new styles End Here========================= */
