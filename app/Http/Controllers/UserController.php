@@ -2,22 +2,23 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Course;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Spatie\Permission\Models\Role;
 
-class CourseController extends Controller
+class UserController extends Controller
 {
 
     public function index(Request $request)
     {
-        $query = Course::query();
+        $query = User::query();
 
         // Check if there's a search term
         if ($request->has('search')) {
             $searchTerm = $request->search;
             $query->where(function ($q) use ($searchTerm) {
-                $q->where('title', 'like', "%$searchTerm%")
-                    ->orWhere('desc', 'like', "%$searchTerm%");
+                $q->where('name', 'like', "%$searchTerm%")
+                    ->orWhere('email', 'like', "%$searchTerm%");
             });
         }
 
@@ -27,34 +28,35 @@ class CourseController extends Controller
         // Pass the search term to the view
         $searchTerm = $request->search;
 
-        return view('schoolsettings.course.index', compact('items', 'searchTerm'));
+        return view('accesscontrol.user.index', compact('items', 'searchTerm'));
     }
 
     public function create()
     {
-        return view('schoolsettings.course.create');
+        return view('accesscontrol.user.create');
     }
     public function store(Request $request)
     {
-        Course::create($request->only(['title', 'desc']));
+        User::create($request->only(['title', 'desc']));
 
         return redirect()->route('course.index')->with(['function' => 'store']);
     }
     public function edit($id)
     {
-        $item = Course::find($id);
-        return view('schoolsettings.course.edit', compact('item'));
+        $roles = Role::all();
+        $item = User::find($id);
+        return view('accesscontrol.user.edit', compact('item','roles'));
     }
     public function update(Request $request, $id)
     {
-        $item = Course::find($id);
-        $item->update($request->only(['title',  'desc']));
-
-        return redirect()->route('course.index')->with(['function' => 'update']);
+        $item = User::find($id);
+        $item->update($request->only(['name']));
+        $item->roles()->sync($request->role_id);
+        return redirect()->route('user.index')->with(['function' => 'update']);
     }
     public function destroy($id)
     {
-        $item = Course::find($id);
+        $item = User::find($id);
         $item->delete();
         return 'success';
     }
