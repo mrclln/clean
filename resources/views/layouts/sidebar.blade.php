@@ -6,14 +6,15 @@
                 <span class="menu-title">Dashboard</span>
             </a>
         </li>
-
+        @can('post-manage')
         <li class="nav-item">
-            <a class="nav-link" href="adminsubject.html">
+            <a class="nav-link {{request()->is('post*') ? 'active' : ''}}" href="{{url('post')}}">
                 <i class="typcn typcn-flow-children menu-icon"></i>
                 <span class="menu-title">Posts</span>
             </a>
         </li>
-        @hasrole('Registrar|Super Admin')
+        @endcan
+        @can('manage-school-settings')
         <li class="nav-item">
             <a class="nav-link {{(request()->is('schoolyear*')|| request()->is('semester*') || request()->is('course*')) ? 'active' : ''}}" data-toggle="collapse" href="#ssettings" aria-expanded="false" aria-controls="icons">
                 <i class="typcn typcn-spanner-outline menu-icon"></i>
@@ -31,9 +32,8 @@
                 </ul>
             </div>
         </li>
-        @endhasrole
-        @hasrole('Admin|Super Admin')
-
+        @endcan
+        @can('manage-access-control')
         <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#assettings" aria-expanded="false" aria-controls="icons">
                 <i class="typcn typcn-cog-outline menu-icon"></i>
@@ -42,12 +42,19 @@
             </a>
             <div class="collapse" id="assettings">
                 <ul class="nav flex-column sub-menu">
+
                     <li class="nav-item {{request()->is('role*') ? 'active' : ''}}"> <a class="nav-link " href="{{url('role')}} ">Roles</a></li>
-                    <li class="nav-item"> <a class="nav-link" href=" ">Permissions</a></li>
+                    @can('permission-manage')
+
+                    <li class="nav-item {{request()->is('permission*') ? 'active' : ''}}"> <a class="nav-link " href="{{url('permission')}} ">Permissions</a></li>
+                    @endcan
+
+                    @can('user-manage')
                     <li class="nav-item {{request()->is('user*') ? 'active' : ''}}"> <a class="nav-link " href="{{url('user')}} ">Users</a></li>
+                     @endcan
                 </ul>
             </div>
         </li>
-        @endhasrole
+        @endcan
     </ul>
 </nav>

@@ -20,6 +20,7 @@
     <link rel="shortcut icon" href="{{ asset('assets/images/LOGOEDIT.png') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/vertical-layout-light/list.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/custom/sweetalert/sweetalert2.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/custom/select2/select2.css') }}" />
     @vite('resources/js/app.js')
     @yield('css')
 </head>
@@ -64,6 +65,7 @@
     <script src="{{ asset('assets/js/settings.js') }}"></script>
     <script src="{{ asset('assets/js/todolist.js') }}"></script>
     <script src="{{ asset('assets/custom/sweetalert/sweetalert2.js') }}"></script>
+    <script src="{{ asset('assets/custom/select2/select2.js') }}"></script>
     <script>
 
         $(document).on('click','.btndelete', function(e) {

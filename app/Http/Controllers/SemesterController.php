@@ -7,7 +7,16 @@ use Illuminate\Http\Request;
 
 class SemesterController extends Controller
 {
-       public function index(Request $request)
+
+    public function __construct()
+    {
+        $this->middleware('permission:semester-manage|semester-create|semester-edit|semester-delete', ['only' => ['index','show']]);
+         $this->middleware('permission:semester-create', ['only' => ['create','store']]);
+         $this->middleware('permission:semester-edit', ['only' => ['edit','update']]);
+         $this->middleware('permission:semester-delete', ['only' => ['destroy']]);
+    }
+
+    public function index(Request $request)
 {
     $query = Semester::query();
 

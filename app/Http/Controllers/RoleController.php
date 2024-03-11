@@ -3,11 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
 
 class RoleController extends Controller
 {
-
+    public function __construct()
+    {
+        $this->middleware('permission:role-manage|role-create|role-edit|role-delete', ['only' => ['index','show']]);
+         $this->middleware('permission:role-create', ['only' => ['create','store']]);
+         $this->middleware('permission:role-edit', ['only' => ['edit','update']]);
+         $this->middleware('permission:role-delete', ['only' => ['destroy']]);
+    }
     public function index(Request $request)
     {
         $query = Role::query();
@@ -42,14 +49,18 @@ class RoleController extends Controller
     }
     public function edit($id)
     {
+        $permissions = Permission::all();
         $item = Role::find($id);
-        return view('accesscontrol.role.edit', compact('item'));
+        return view('accesscontrol.role.edit', compact('item','permissions'));
     }
     public function update(Request $request, $id)
     {
         $item = Role::find($id);
-        $item->update($request->only(['title',  'desc']));
-
+        $item->update($request->only(['name']));
+        $item->permissions()->detach();
+        if($request->permissions){
+            $item->permissions()->sync($request->permissions);
+        }
         return redirect()->route('role.index')->with(['function' => 'update']);
     }
     public function destroy($id)
