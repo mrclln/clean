@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
-class Semester extends Model
+class Article extends Model
 {
     use HasApiTokens, HasFactory, Notifiable;
 
@@ -17,9 +17,10 @@ class Semester extends Model
      *
      * @var array<int, string>
      */
-    protected $fillable = [
+     protected $fillable = [
         'title',
-        'desc',
+        'content',
     ];
+
 
 }

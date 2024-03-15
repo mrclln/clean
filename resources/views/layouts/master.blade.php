@@ -88,7 +88,7 @@
                         type: "DELETE",
                         data: { id: id, _token: "{{ csrf_token() }}" },
                         success: function(response) {
-                            row.remove(); // Remove the row from the table
+                            row.remove();
                             Swal.fire({
                                 title: "Deleted!",
                                 text: "Your file has been deleted.",

@@ -6,14 +6,26 @@
                 <span class="menu-title">Dashboard</span>
             </a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link {{request()->is('message*') ? 'active' : ''}}" href="{{url('messages')}}">
+                <i class="typcn typcn-message menu-icon"></i>
+                <span class="menu-title">Messages</span>
+            </a>
+        </li>
         @can('post-manage')
         <li class="nav-item">
             <a class="nav-link {{request()->is('post*') ? 'active' : ''}}" href="{{url('post')}}">
-                <i class="typcn typcn-flow-children menu-icon"></i>
+                <i class="typcn typcn-flash menu-icon"></i>
                 <span class="menu-title">Posts</span>
             </a>
         </li>
         @endcan
+        <li class="nav-item">
+            <a class="nav-link {{request()->is('article*') ? 'active' : ''}}" href="{{url('article')}}">
+                <i class="typcn typcn-chart-line menu-icon"></i>
+                <span class="menu-title">Articles</span>
+            </a>
+        </li>
         @can('manage-school-settings')
         <li class="nav-item">
             <a class="nav-link {{(request()->is('schoolyear*')|| request()->is('semester*') || request()->is('course*')) ? 'active' : ''}}" data-toggle="collapse" href="#ssettings" aria-expanded="false" aria-controls="icons">
